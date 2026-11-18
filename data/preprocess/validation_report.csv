@@ -1,0 +1,14 @@
+file,original_rows,cleaned_rows,invalid_dates_removed,duplicate_dates_removed,rows_with_missing_OHLC,nonpositive_price_rows,invalid_OHLC_rows,missing_values_total,start_date,end_date,output_file
+cac40.csv,2560,2560,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\cac40.csv
+dax.csv,2539,2539,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\dax.csv
+dow_jones.csv,2514,2514,0,0,0,0,0,0,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\dow_jones.csv
+ftse100.csv,2526,2526,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\ftse100.csv
+hang_seng.csv,2461,2461,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\hang_seng.csv
+india_vix.csv,2453,2453,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\india_vix.csv
+nasdaq.csv,2514,2514,0,0,0,0,0,0,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\nasdaq.csv
+nifty50.csv,2468,2468,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\nifty50.csv
+nikkei225.csv,2442,2442,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\nikkei225.csv
+sensex.csv,2465,2465,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\sensex.csv
+shanghai.csv,2427,2427,0,0,1,0,0,2,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\shanghai.csv
+sp500.csv,2514,2514,0,0,0,0,0,0,2016-10-17,2026-10-16,c:\Users\muhda\Desktop\Forecasting\data\preprocess\sp500.csv
+usd_inr.csv,2603,2603,0,0,0,0,102,0,2016-10-17,2026-10-17,c:\Users\muhda\Desktop\Forecasting\data\preprocess\usd_inr.csv
