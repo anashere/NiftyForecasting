@@ -1,0 +1,29 @@
+name: NIFTY 50 Automated Forecast Pipeline
+
+on:
+  schedule:
+    - cron: "0 3 * * 1-5" # Runs Mon-Fri at 08:30 AM IST (03:00 UTC)
+  workflow_dispatch:
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Download latest market data
+        run: python code/download_data.py
+      - name: Preprocess and engineer cross-market features
+        run: python code/preprocess.py
+      - name: Train models, log to MLflow, explain with SHAP & alert Telegram
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+          MLFLOW_TRACKING_USERNAME: ${{ secrets.MLFLOW_TRACKING_USERNAME }}
+          MLFLOW_TRACKING_PASSWORD: ${{ secrets.MLFLOW_TRACKING_PASSWORD }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python code/train_pipeline.py
