@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+catboost
+shap
+mlflow
+streamlit
+plotly
+requests
+python-dotenv
+yfinance
