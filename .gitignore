@@ -1,0 +1,8 @@
+# Environment credentials
+.env
+
+# Python / ML artifacts
+__pycache__/
+*.pyc
+mlflow.db
+catboost_info/
