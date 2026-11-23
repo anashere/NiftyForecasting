@@ -3,6 +3,7 @@
 
 # In[5]:
 
+display = print
 
 from pathlib import Path
 import pandas as pd
