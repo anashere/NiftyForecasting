@@ -2,7 +2,7 @@ name: NIFTY 50 Automated Forecast Pipeline
 
 on:
   schedule:
-    - cron: "0 3 * * 1-5" # Runs Mon-Fri at 08:30 AM IST (03:00 UTC)
+    - cron: "30 1 * * 1-5" # 07:00 AM IST (Mon-Fri)
   workflow_dispatch:
 
 jobs:
